@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REPORT id="LLIBRO" oem="true" range1="CURRENT" range2="LAST" range3="">
+   <WORKAREAS>
+      <DBF name="LIBROREC.DBF" alias="LIBROREC" index="LIBROFEC.NTX" master="true"/>
+      <DBF name="USER.DBF"  alias="USUARIO" index="USER.NTX" master="false"/>
+   </WORKAREAS>
+   <MASTERDETAIL>
+      <DBF detail="USER.DBF" master="LIBROREC.DBF" expression="USUARIO"/>
+   </MASTERDETAIL>
+   	<FUNCTIONS>
+		  <FUNCTION name="Function Empty( aParam: Variant): Boolean" description= "Devuelve .T. si la cadena esta vacia" category="PRUEBAS"  />
+	</FUNCTIONS>
+</REPORT>
+
