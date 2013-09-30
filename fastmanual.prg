@@ -474,6 +474,11 @@ METHOD Master_detail() CLASS TFASTMANUAL
 
       ::oFrPrn:SetMasterDetail( cMaster, cDetail,   &( "{ || "+  cExpression + " }") )
 
+      if lSyncro
+        ::oFrPrn:SetResyncPair( cMaster, cDetail )
+      endif
+
+
    NEXT
 
 RETURN NIL
